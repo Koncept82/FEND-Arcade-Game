@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <div id="instruct">
+            <p><h1>Boy vs. Bugs</h1></p>
+            <p>Click the button to start the game!</p>
+            <p>Avoid the bugs! Head for the Water!</p>
+            <p>Use the arrow keys to move</p>
+        </div>
+        <div id="start_game">
+            <button id="start-btn" name="start">Start the Game!</button>
+        </div>
+        <script>
+            // listen for button click
+            document.getElementById("start_game").addEventListener("click", function(e){
+                // load the game page
+                window.location = "game.html?";
+            });
+        </script>
+    </body>
+</html>
